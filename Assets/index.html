@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Communication</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <div class="buttons-container">
+        <div class="power-btn" id="powerButton"></div>
+        <div class="serial-btn" id="connect-button"></div>
+
+        <button class="forward-btn dir" id="forwardButton">Forward</button>
+        <button class="reverse-btn dir" id="reverseButton">Backward</button>
+        <input type="number" name="" id="speed1">
+        <input type="number" name="" id="speed2">
+        <button id="sendSpeed">Send</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sensor</th>
+                <th>Value</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Left Sensor</td>
+                <td><span class="sensor-value" id="left-value"></span></td>
+                <td id="left-status">Offline</td>
+            </tr>
+            <tr>
+                <td>Center Sensor</td>
+                <td><span class="sensor-value" id="center-value"></span></td>
+                <td id="center-status">Offline</td>
+            </tr>
+            <tr>
+                <td>Right Sensor</td>
+                <td><span class="sensor-value" id="right-value"></span></td>
+                <td id="right-status">Offline</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
